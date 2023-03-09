@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  background-color: #e3f2fd;
+}
+
+.popup {
+  position: fixed;
+  top: .625rem;
+  left: calc(50% - 150px);
+  border-radius: 8%;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0rem .4375rem 1.8125rem 0rem;
+  transition: all .1s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 16.875rem;
+}
+
+.content h2 {
+  margin: 0 8%;
+  margin-bottom: .75rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.content p {
+  font-size: .875rem;
+  margin: 0 8%;
+}
+
+.uil-wifi-slash {
+  color: red;
+  font-size: 3.75rem;
+}
+
+.uil-wifi {
+  color: green;
+  font-size: 3.75rem;
+}
+
+.uil-redo {
+  margin-top: .625rem;
+  font-size: 2.1875rem;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.uil-redo:hover {
+  transform: rotate(75deg);
+  transition: 1s ease;
+}
+
+
+.popup2 {
+  position: fixed;
+  bottom: 1.875rem;
+  left: 1.5625rem;
+  padding: .625rem 1.25rem;
+  color: #d1d1d1;
+  background-color: rgba(0, 0, 0, 0.822);
+  box-shadow: rgba(0, 0, 0, 0.616) 0rem .4375rem 1.8125rem 0rem;
+  border-radius: .3125rem;
+  transition: all .25s ease;
+}
+
+
+.hidden1 {
+  top: -50%;
+  transition: all .25s ease;
+}
+
+.hidden2 {
+  transition: all 0.25s ease;
+  bottom: -50%;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
