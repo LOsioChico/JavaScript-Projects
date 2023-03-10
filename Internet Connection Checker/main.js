@@ -20,7 +20,6 @@ const popupWindow1 = (status) => {
     container.style = 'height: 270px;'
     popupRedo.style = 'visibility: visible'
 
-    clearInterval(timerCount)
     timerCount = setInterval(() => {
       timer--
       if (timer === 0) {
@@ -60,6 +59,7 @@ const checkConnection = async () => {
     isOnline = false
   }
   timer = 5
+  clearInterval(timerCount)
   popupWindow1(isOnline)
   popupWindow2(isOnline)
 }
