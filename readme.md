@@ -1,6 +1,6 @@
-# Simple Projects
+# JavaScript Projects
 
-This repository is a collection of my small projects
+This repository is a collection of my small JavaScript Projects
 
 | Project                      | Live | Code |
 | ------------------------------- |------| ---- |
